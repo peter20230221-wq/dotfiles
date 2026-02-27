@@ -1,0 +1,8 @@
+# 字体
+font=JetBrainsMono Nerd Font 9
+
+# 通知存在时间（毫秒）
+default-timeout=3000
+
+# 圆角
+border-radius=10

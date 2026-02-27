@@ -1,0 +1,200 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 3,
+    "height": 34,
+    "modules-left": [
+        "custom/logo",
+        "hyprland/workspaces",
+        "custom/weather",
+        "clock",
+        "bluetooth",
+    ],
+    "modules-center": [
+   "hyprland/window",
+    ],
+    "modules-right": [
+        "tray",
+        "memory",
+        "disk",
+        "cpu",
+        "network",
+        "backlight",
+        "wireplumber",
+        "battery",
+        "custom/power"
+    ],
+
+
+   "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "default": "",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "active": "󱓻",
+            "urgent": "󱓻"
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+
+"network": {
+    "format-wifi": "{icon} ({signalStrength}%)",
+    "format-ethernet": "{ifname} 󰈀",
+    "format-linked": "󰈁 {ifname} (no IP)",   // 有线连上但没IP的情况
+    "format-disconnected": "󰤭",              // 断开通用图标
+    "on-click": "notify-send 'nm-applet reboot' && pkill nm-applet || true && nm-applet ",
+    "on-click-right": "nm-connection-editor",   // 右键打开编辑器
+    "format-icons": [
+        "󰤯",    // 0   ~ 很弱 (≈0-20%)
+        "󰤟",    // 弱
+        "󰤢",    // 中等
+        "󰤥",    // 强
+        "󰤨"     // 满格 (≈80-100%)
+    ],
+   "interval": 10,
+   "tooltip-format": "↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
+},
+
+"memory": {
+        "interval": 5,
+        "format": " {}%",
+        "max-length": 10,
+        "on-click": "missioncenter ",
+},
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "tooltip-format": "{calendar}",
+        "format-alt": "  {:%a, %d %b %Y}",
+        "format": "  {:%I:%M %p}"
+    },
+
+
+
+
+
+"cpu": {
+        "format": "󰍛 {usage}%",
+        "max-length": 10,
+        "interval": 1,
+        "on-click": "missioncenter ",
+
+},
+
+"disk": {
+        "interval": 5,
+        "format": " {}%",
+        "max-length": 10,
+        "on-click": "missioncenter ",
+    },
+
+
+"wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "󰂰",
+        "nospacing": 1,
+        "tooltip-format": "Volume : {volume}%",
+        "format-muted": "󰝟",
+        "format-icons": {
+            "headphone": "",
+            "default": ["󰖀","󰕾",""]
+        },
+        "on-click": "pamixer -t",
+        "scroll-step": 1
+    },
+
+"battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": {
+            "charging": [
+                "󰢜",
+                "󰂆",
+                "󰂇",
+                "󰂈",
+                "󰢝",
+                "󰂉",
+                "󰢞",
+                "󰂊",
+                "󰂋",
+                "󰂅"
+            ],
+            "default": [
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ]
+        },
+        "format-full": "Charged ",
+        "interval": 5,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "tooltip": false
+    },
+    "custom/power": {
+        "format": "󰤆",
+        "tooltip": false,
+        "on-click": "~/.config/waybar/scripts/power-menu.sh",
+
+    },
+
+"custom/logo": {
+        "format": " ",
+        "tooltip": false,
+        "on-click": "wofi &"
+    },
+
+"backlight":{
+"format":"☀ {}%",
+"tooltip": true,
+"tooltip-format":"Lightness: {}%"
+},
+
+
+
+"custom/weather": {
+    "format": "{}°C",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar",
+    "return-type": "json"
+},
+
+"hyprland/window": {
+    "format": "{class}",          // 只显示应用类名，例如：firefox、kitty、code-oss 等
+    "separate-outputs": true      // 可选：每个显示器显示自己焦点窗口的类名
+},
+
+"bluetooth": {
+    "format": " on ",
+    "format-on": " on",
+    "format-off": " off",
+    "tooltip": true,
+    "on-click": "blueman-manager"
+},
+
+}
