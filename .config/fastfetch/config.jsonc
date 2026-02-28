@@ -68,12 +68,6 @@
             "keyWidth": 15
         },
         {
-            "type": "bios",
-            "key": "│ ├ BIOS   ",
-            "keyColor": "yellow",
-            "keyWidth": 15
-        },
-        {
             "type": "packages",
             "key": "│ ├󰏖 Pkgs   ",
             "keyColor": "yellow",
@@ -101,20 +95,8 @@
             "keyWidth": 15
         },
         {
-            "type": "lm",
-            "key": "│ ├ LM     ",
-            "keyColor": "blue",
-            "keyWidth": 15
-        },
-        {
             "type": "wm",
             "key": "│ ├ WM     ",
-            "keyColor": "blue",
-            "keyWidth": 15
-        },
-        {
-            "type": "wmtheme",
-            "key": "│ ├󰉼 Theme  ",
             "keyColor": "blue",
             "keyWidth": 15
         },
