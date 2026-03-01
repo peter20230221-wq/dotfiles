@@ -190,7 +190,7 @@
 },
 
 "bluetooth": {
-    "format": " on ",
+    "format": " off",
     "format-on": " on",
     "format-off": " off",
     "tooltip": true,
