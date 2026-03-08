@@ -21,4 +21,5 @@ bash install.sh
 ​```
 
 ## 截图
-（可选，放一张桌面截图）
+<img width="2560" height="1600" alt="图片" src="https://github.com/user-attachments/assets/3e341bc2-b0f5-42a8-887e-24ffdaecb5c9" />
+
