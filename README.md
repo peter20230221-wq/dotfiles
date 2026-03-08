@@ -11,7 +11,7 @@
 
 ## 前置条件
 - 已配置archlinuxcn源
-- 将仓库克隆到`~/.dotfiles`
+- 建议提前把shell换为zsh
 
 ## 安装
 ​```
