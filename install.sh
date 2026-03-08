@@ -20,6 +20,8 @@ echo '安装截图工具'
 sudo pacman -S --needed grim slurp
 echo '安装终端工具'
 sudo pacman -S --needed thefuck
+echo '安装oh-my-zsh'
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo '安装通知管理器'
 sudo pacman -S --needed mako
 echo '安装waybar顶栏与waybar天气组件'
