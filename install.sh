@@ -1,5 +1,10 @@
 #!/bin/bash
 set -e
+echo '安装基础编译依赖'
+sudo pacman -S --needed base-devel rust cargo openssl pkg-config
+echo '安装字体'
+echo '安装字体'
+sudo pacman -S --needed noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-nerd-fonts-symbols ttf-jetbrains-mono-nerd
 echo '软件安装部分'
 echo '更新系统'
 sudo pacman -Syu
