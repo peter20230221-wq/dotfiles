@@ -14,10 +14,10 @@
 - 将仓库克隆到`~/.dotfiles`
 
 ## 安装
-​```bash
-git clone https://github.com/peter20230221-wq/dotfiles ~/.dotfiles
-cd ~/.dotfiles
-bash install.sh
+​```
+git clone https://github.com/peter20230221-wq/dotfiles ~/.dotfiles &&
+cd ~/.dotfiles &&
+bash install.sh 
 ​```
 
 ## 截图
