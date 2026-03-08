@@ -1,13 +1,13 @@
 #!/bin/bash
 set -e
+echo '软件安装部分'
+echo '更新系统'
+sudo pacman -Syu
 echo '安装基础编译依赖'
 sudo pacman -S --needed base-devel rust cargo openssl pkg-config
 echo '安装字体'
 echo '安装字体'
 sudo pacman -S --needed noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-nerd-fonts-symbols ttf-jetbrains-mono-nerd
-echo '软件安装部分'
-echo '更新系统'
-sudo pacman -Syu
 echo '安装AUR管理器'
 sudo pacman -S --needed yay paru
 echo '安装hyprland及其组件'
@@ -16,6 +16,10 @@ echo '安装wofi软件启动器'
 sudo pacman -S --needed wofi
 echo '安装kitty终端模拟器'
 sudo pacman -S --needed kitty
+echo '安装截图工具'
+sudo pacman -S --needed grim slurp
+echo '安装终端工具'
+sudo pacman -S --needed thefuck
 echo '安装通知管理器'
 sudo pacman -S --needed mako
 echo '安装waybar顶栏与waybar天气组件'
