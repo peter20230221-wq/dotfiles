@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 echo '软件安装部分'
 echo '更新系统'
 sudo pacman -Syu
