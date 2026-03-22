@@ -25,6 +25,8 @@ echo '安装截图工具'
 sudo pacman -S --needed grim slurp
 echo '安装终端工具'
 sudo pacman -S --needed thefuck
+echo '安装zsh'
+sudo pacman -S --needed zsh 
 echo '安装oh-my-zsh'
 RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 echo '安装通知管理器'
