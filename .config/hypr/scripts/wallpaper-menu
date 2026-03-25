@@ -1,0 +1,9 @@
+#!/bin/bash
+
+WALL_DIR=~/Pictures/wallpapers
+
+for img in "$WALL_DIR"/*; do
+    echo "img:$img:text:$(basename "$img")"
+done | wofi --dmenu --allow-images --prompt "壁纸菜单" | cut -d':' -f2 | while read file; do
+    [ -n "$file" ] && awww img "$file"
+done
