@@ -101,7 +101,7 @@
         "interval": 5,
         "format": " {}%",
         "max-length": 10,
-        "on-click": "missioncenter ",
+        "on-click": "filelight ",
     },
 
 
