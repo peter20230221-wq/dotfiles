@@ -67,14 +67,14 @@
     },
 
     "wireplumber": {
-        "format": "VOL {volume}%",
+        "format": "VOL {volume}% ",
         "format-muted": "MUTED"
     },
 
     "bluetooth": {
-        "format": "BT ON",
-        "format-disabled": "BT OFF",
-        "format-connected": "BT {num_connections}"
+        "format": "BT-ON",
+        "format-disabled": "BT-OFF",
+        "format-connected": "BT- {num_connections}"
     },
 
     "battery": {
@@ -84,7 +84,7 @@
         },
         "format": "BAT {capacity}%",
         "format-charging": "CHR {capacity}%",
-        "format-plugged": "AC",
+        "format-plugged": "AC {capacity}%",
         "tooltip-format": "{timeTo}"
     },
 
@@ -98,7 +98,7 @@
     },
     "backlight": {
     "device": "intel_backlight",
-    "format": "BL {percent}%",
+    "format": "BL {percent}% ",
     "tooltip": false
 },
     "hyprland/window": {
