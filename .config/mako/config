@@ -1,8 +1,13 @@
-# 字体
-font=JetBrainsMono Nerd Font 9
+font=JetBrainsMono Nerd Font 10
 
-# 通知存在时间（毫秒）
 default-timeout=3000
 
-# 圆角
-border-radius=10
+border-radius=4
+
+background-color=#121218dd
+text-color=#ffffff
+border-color=#ffffff14
+
+padding=10
+margin=8
+border-size=1
