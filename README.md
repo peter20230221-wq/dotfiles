@@ -21,5 +21,6 @@ bash install.sh
 ```
 
 ## 截图
-<img width="2560" height="1600" alt="图片" src="https://github.com/user-attachments/assets/3e341bc2-b0f5-42a8-887e-24ffdaecb5c9" />
+<img width="2560" height="1600" alt="图片" src="https://github.com/user-attachments/assets/ef04e894-9ced-4d0d-bcb8-b3161cdfb379" />
+
 
