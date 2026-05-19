@@ -6,16 +6,15 @@
 
     "modules-left": [
         "custom/logo",
+        "hyprland/window",
         "hyprland/workspaces"
     ],
 
     "modules-center": [
-        "hyprland/window",
-
+        "clock"
     ],
 
     "modules-right": [
-        "clock",
         "tray",
         "cpu",
         "memory",
@@ -114,7 +113,7 @@
     },
 
 "custom/logo": {
-        "format": " ",
+        "format": "  ",
         "tooltip": false,
         "on-click": "wofi &"
     },
