@@ -16,7 +16,7 @@ case $selected in
   休眠)
     systemctl hibernate ;;
   锁屏)
-    hyprlock ;;   # Hyprland 用 hyprlock，sway 用 swaylock，根据自己改
+    hyprlock ;;
   注销)
-    hyprctl dispatch exit ;;   # Hyprland 或 sway，根据自己改
+    hyprshutdown ;;
 esac
