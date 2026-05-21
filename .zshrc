@@ -95,7 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='nvim'
 # fi
-
+export EDITOR=neovide
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
