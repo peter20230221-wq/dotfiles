@@ -47,3 +47,12 @@ tooltip {
   color: white;
   border: 1px solid #333;
 }
+
+menu {
+    font-size: 8px;
+    padding: 0px;
+}
+
+menu menuitem {
+    padding: 3px 6px;
+}
