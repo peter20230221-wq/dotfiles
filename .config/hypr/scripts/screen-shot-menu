@@ -15,7 +15,7 @@ case "$selected" in
   hyprctl keyword animations:enabled false && grim -g "$(slurp)" - | wl-copy && hyprctl keyword animations:enabled true
     ;;
   全屏截图到剪贴板)
- 	hyprctl keyword animations:enabled false && grim - | wl-copy && hyprctl keyword animations:enabled true
+ 	sleep 2 && hyprctl keyword animations:enabled false && grim - | wl-copy && hyprctl keyword animations:enabled true
     ;;
 esac
 
