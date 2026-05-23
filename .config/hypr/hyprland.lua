@@ -375,7 +375,16 @@ hl.window_rule({
 	center = true,
 })
 
-hl.window_rule({ name = "mpv-opacity", match = { class = "^(mpv)$" }, opacity = 1.0 })
-hl.window_rule({ name = "bilibili-opacity", match = { class = "^(bilibili)$" }, opacity = 1.0 })
+-- MPV 视频播放器强制完全不透明
+hl.window_rule({
+	name = "mpv-opacity",
+	match = { class = "^(mpv)$" },
+	opacity = "1.0 override 1.0 override", -- 关键：加 override
+})
 
-hl.window_rule({ name = "hoi4-fullscreen", match = { class = "hoi4" }, fullscreen = true })
+-- Bilibili 强制完全不透明
+hl.window_rule({
+	name = "bilibili-opacity",
+	match = { class = "^(bilibili)$" },
+	opacity = "1.0 override 1.0 override",
+})
