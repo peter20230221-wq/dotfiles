@@ -229,7 +229,7 @@ hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("~/.config/hypr/scripts/wallp
 hl.bind(mainMod .. " + SHIFT + SPACE", hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprsunset-auto"))
 
 hl.bind("ALT + F4", hl.dsp.exec_cmd("hyprlock"))
-
+hl.bind("ALT + F3", hl.dsp.exec_cmd("pkill waybar || waybar"))
 -- Focus movement
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "l" }))
 hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "r" }))
