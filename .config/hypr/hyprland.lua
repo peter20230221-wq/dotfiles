@@ -189,7 +189,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 	hl.exec_cmd("/usr/lib/pam_kwallet_init &")
 	hl.exec_cmd("xrdb -merge ~/.Xresources")
-
+	hl.exec_cmd("hyprsunset")
 	-- 可选玩具
 	-- hl.exec_cmd("activate-linux -t '激活Arch Linux' -m '转到archlinux.org/donate以激活Arch'")
 end)
@@ -226,7 +226,6 @@ hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd("thunderbird"))
 hl.bind(mainMod .. " + SHIFT + X", hl.dsp.exec_cmd("~/.config/hypr/scripts/screen-shot-menu"))
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = "fullscreen" }))
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("~/.config/hypr/scripts/wallpaper-menu"))
-hl.bind(mainMod .. " + SHIFT + SPACE", hl.dsp.exec_cmd("~/.config/hypr/scripts/hyprsunset-auto"))
 
 hl.bind("ALT + F4", hl.dsp.exec_cmd("hyprlock"))
 hl.bind("ALT + F3", hl.dsp.exec_cmd("pkill waybar || waybar"))

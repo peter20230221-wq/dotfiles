@@ -56,3 +56,29 @@ menu {
 menu menuitem {
     padding: 3px 6px;
 }
+
+
+#cpu.warning {
+    color: #ffcc5c;        /* 橙黄色 - 警告 */
+    font-weight: bold;
+}
+#cpu.critical {
+    color: #ff5f6b;        /* 亮红色 - 危险 */
+    animation: pulse 1s infinite;
+}
+
+#memory.warning {
+    color: #ffcc5c;
+    font-weight: bold;
+}
+#memory.critical {
+    color: #ff5f6b;
+    animation: pulse 1s infinite;
+}
+#battery.warning {
+    color: #ffcc5c;
+}
+#battery.critical {
+    color: #ff5f6b;
+}
+
