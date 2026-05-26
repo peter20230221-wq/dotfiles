@@ -12,9 +12,9 @@ selected=$(printf "%b" "$entries" |
 
 case "$selected" in
 自选截图到剪贴板)
-  hyprctl keyword animations:enabled false && grim -g "$(slurp)" - | wl-copy && hyprctl keyword animations:enabled true
+  hyprctl eval 'hl.config({ animations = { enabled = false } })' && grim -g "$(slurp)" - | wl-copy && hyprctl eval 'hl.config({ animations = { enabled = true } })'
   ;;
 全屏截图到剪贴板)
-  sleep 0.2 && hyprctl keyword animations:enabled false && grim - | wl-copy && hyprctl keyword animations:enabled true
+  hyprctl eval 'hl.config({ animations = { enabled = false } })' && grim - | wl-copy && hyprctl eval 'hl.config({ animations = { enabled = true } })'
   ;;
 esac
