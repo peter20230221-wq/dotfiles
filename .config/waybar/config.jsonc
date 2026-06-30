@@ -70,7 +70,7 @@
         "format-wifi": "NET {signalStrength}%",
         "format-ethernet": "ETH",
         "format-disconnected": "OFF",
-        "tooltip-format": "{ifname} via {gwaddr}"
+        "tooltip-format": "⬇{bandwidthDownBits} ⬆{bandwidthUpBits}"
     },
 
     "wireplumber": {
